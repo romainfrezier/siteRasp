@@ -4,12 +4,38 @@ const database = firebase.database();
 const rootRestaurant =  firebase.database().ref("Database/Restaurant");
 const rootFiltre =  firebase.database().ref("Database/Filtres");
 const rootAdmin =  firebase.database().ref("Database/Admin");
+const rootStats = firebase.database().ref("Database/Stats")
+const rootProgramme = firebase.database().ref("Database/Programmes")
 Geocode.setApiKey("AIzaSyCrGZGGBfcGzISivufJwZybIvBqEw_BQi4");
 Geocode.setLanguage("fr");
 
 
 
+const getAllStats = () => {
+    return new Promise((result, reject) => {
+        rootStats.once("value", (snapshot) => {
+            if (snapshot.val()){
+                result(snapshot.val());
+            }
+            else {
+                console.log("no stats fetched")
+            }
+        })
+    })
+}
 
+const getAllProgrammes = () => {
+    return new Promise((result, reject) => {
+        rootProgramme.once("value", (snapshot) => {
+            if (snapshot.val()){
+                result(snapshot.val());
+            }
+            else {
+                console.log("no programmes fetched")
+            }
+        })
+    })
+}
 
 
 const getAllRestaurant = () => {
@@ -187,5 +213,7 @@ export {
     modifierFiltre,
     modifierRestaurant,
     verifAdmin,
-    verifConnexion
+    verifConnexion,
+    getAllProgrammes,
+    getAllStats
 }

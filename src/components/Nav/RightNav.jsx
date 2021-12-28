@@ -56,6 +56,8 @@ const RightNav = ( props ) => {
             <Ul open={props.open}>
                 <li><a href="home" >Accueil</a></li>
                 <li><a href="">Contact</a></li>
+                <li><a href="programmes" >Programmes</a></li>
+                <li><a href="statistiques">Statistiques</a></li>
                 {(verifConnexion() ? 
                         <li><a href="home" onClick={() => deconnexion()}>Déconnexion</a></li>
                          :

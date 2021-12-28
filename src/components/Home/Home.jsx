@@ -26,8 +26,6 @@ const Home = () => {
     const [reload, setReload] = useState(0);
 
 
-
-    
     
     useEffect(() => {
         getAllRestaurant().then((dataRestaurant) => {
