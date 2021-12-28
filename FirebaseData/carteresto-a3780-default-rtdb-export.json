@@ -1,0 +1,75 @@
+{
+  "Database" : {
+    "Admin" : [ {
+      "id" : "test"
+    } ],
+    "Filtres" : {
+      "-MdRAfjslc61nVgRgNs9" : {
+        "nom" : "alder"
+      },
+      "-MdRI8XH--Ci3jkYofZA" : {
+        "nom" : "Burger"
+      },
+      "-MdRIACY36wOQH_ngIj5" : {
+        "nom" : "FastFood"
+      },
+      "-MdSW4owDX1czedhXfeF" : {
+        "nom" : "HOMO"
+      },
+      "-MdSW7KsRUXFI7I83Inv" : {
+        "nom" : "SEXUEL"
+      },
+      "-MdSW7cBeKyZnhr5lDhC" : {
+        "nom" : "SEXUEL"
+      },
+      "adadadadada" : {
+        "nom" : "test"
+      },
+      "azdazfadzdazdaz" : {
+        "nom" : "test"
+      }
+    },
+    "Restaurant" : {
+      "2" : {
+        "Adresse" : "chez cédric",
+        "Filtres" : [ {
+          "id" : "bananeID"
+        }, {
+          "id" : "magnocID"
+        } ],
+        "Nom" : "elnegre",
+        "description" : "le stock de banane",
+        "id" : "elnegreID"
+      },
+      "-MdNYF_sLAZNKGKVDVQ4" : {
+        "Adresse" : "Rue du magnoque, 0000 BananeCity, AfrqueNoire",
+        "Filtres" : [ "prout", "caca" ],
+        "Nom" : "République Bananière",
+        "description" : "Des bananes à toutes les sauces par un chef très très nègre",
+        "id" : "République BananièreRue du magnoque, 0000 BananeCity, AfrqueNoire"
+      },
+      "-MdR906CRgKGRJ4Ix-bg" : {
+        "Adresse" : "78 rue Etron, 88888 Brazilia, Brazil",
+        "Filtres" : [ "prout", "caca" ],
+        "Nom" : "Boulangerie Alder",
+        "description" : "oh le pet",
+        "id" : "Boulangerie Alder78 rue Etron, 88888 Brazilia, Brazil"
+      },
+      "-MdS5Gl4UFYHM8auLGWt" : {
+        "Adresse" : "test, test test, test",
+        "Filtres" : [ "-MdRIACY36wOQH_ngIj5", "-MdRI8XH--Ci3jkYofZA" ],
+        "Nom" : "testsupp",
+        "description" : "adada"
+      }
+    },
+    "Utilisateurs" : {
+      "uid" : {
+        "favoris" : [ {
+          "id" : "idresto"
+        }, {
+          "id" : "idresto"
+        } ]
+      }
+    }
+  }
+}
