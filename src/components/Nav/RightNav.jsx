@@ -58,6 +58,7 @@ const RightNav = ( props ) => {
                 <li><a href="">Contact</a></li>
                 <li><a href="programmes" >Programmes</a></li>
                 <li><a href="statistiques">Statistiques</a></li>
+                <li><a href="formulaireProgramme">Creer un programme</a></li>
                 {(verifConnexion() ? 
                         <li><a href="home" onClick={() => deconnexion()}>Déconnexion</a></li>
                          :

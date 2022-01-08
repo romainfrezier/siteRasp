@@ -37,6 +37,14 @@ const getAllProgrammes = () => {
     })
 }
 
+const creerProgramme = (programme) => {
+    var newProgramme = rootProgramme.push();
+    newProgramme.set({
+        "Nom" : programme.Nom,
+        "Exercices" : programme.Exercices
+    })
+}
+
 
 const getAllRestaurant = () => {
     console.log("entré");
@@ -215,5 +223,6 @@ export {
     verifAdmin,
     verifConnexion,
     getAllProgrammes,
-    getAllStats
+    getAllStats,
+    creerProgramme
 }

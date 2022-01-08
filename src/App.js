@@ -7,6 +7,7 @@ import FormulaireFiltre from './components/FormulaireFiltre/FormulaireFiltre';
 import Connexion from './components/Connexion/Connexion';
 import Programmes from './components/Programmes/Programmes';
 import Statistiques from './components/Statistiques/Statistiques';
+import FormulaireProgramme from './components/FormulaireProgramme/FormulaireProgramme';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/statistiques" component={Statistiques} />
         <Route path="/FormulaireRestaurant" component={FormulaireRestaurant} />
         <Route path="/FormulaireFiltre" component={FormulaireFiltre} />
+        <Route path="/FormulaireProgramme" component={FormulaireProgramme} />
         <Route path="/" component={Home} />
       </Switch>
   </BrowserRouter>
