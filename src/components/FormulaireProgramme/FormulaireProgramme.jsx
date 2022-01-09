@@ -7,7 +7,34 @@ import ItemFormulaireProgramme from '../ItemFormulaireProgramme/ItemFormulairePr
 import Navbar from '../Nav/Navbar';
 
 const StyledFormulaireProgramme = styled.div`
-    
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 15% 75% 10%;
+        background-color: gray;
+
+        #form{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            margin: auto;
+        }
+
+        #boutonAjoutExo{
+            border: solid black 2px;
+            border-radius: 10px;
+            background-color: green;
+            height: 30px;
+            transition: 0.2s;
+
+            :hover{
+                color: white;
+                transform: scale(1.1);
+            }
+        }
+
+
     `
 
 
@@ -59,16 +86,18 @@ const FormulaireProgramme = (props) => {
 
     return (
         <React.Fragment>
-            <Navbar></Navbar>
             <StyledFormulaireProgramme>
-                <form id="formulaireProgramme" onSubmit={() => onSubmit()}>
-                    <input type="text" id="nomProgramme" name="nomProgramme" placeholder='Nom du programme' required></input>
-                    {afficherForm(form)}
-                    <input type="submit"></input>
-                </form>
-                <div id="boutonAjoutExo" onClick={() => ajouterExo()}>Ajouter</div>
+                <Navbar></Navbar>
+                    <div id='form'>
+                        <form id="formulaireProgramme" onSubmit={() => onSubmit()}>
+                            <input type="text" id="nomProgramme" name="nomProgramme" placeholder='Nom du programme' required></input>
+                            {afficherForm(form)}
+                            <input type="submit"></input>
+                        </form>
+                        <div id="boutonAjoutExo" onClick={() => ajouterExo()}>Ajouter</div>
+                    </div>
+                <Footer></Footer>
             </StyledFormulaireProgramme>
-            <Footer></Footer>
         </React.Fragment>
     );
 };

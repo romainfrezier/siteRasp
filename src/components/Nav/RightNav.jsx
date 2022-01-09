@@ -45,24 +45,13 @@ const Ul = styled.ul`
 
 const RightNav = ( props ) => {
 
-    const deconnexion = () => {
-        firebase.auth().signOut();
-        sessionStorage.setItem("connexion",false);
-        sessionStorage.setItem("admin",false);
-    }
 
     return (
         <div>
             <Ul open={props.open}>
-                <li><a href="home" >Accueil</a></li>
-                <li><a href="">Contact</a></li>
                 <li><a href="programmes" >Programmes</a></li>
                 <li><a href="statistiques">Statistiques</a></li>
-                <li><a href="formulaireProgramme">Creer un programme</a></li>
-                {(verifConnexion() ? 
-                        <li><a href="home" onClick={() => deconnexion()}>Déconnexion</a></li>
-                         :
-                         <li><a href="connexion">Connexion</a></li>)}
+                <li><a href="formulaireProgramme">Créer un programme</a></li>
             </Ul>
         </div>
     )

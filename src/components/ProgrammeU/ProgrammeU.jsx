@@ -2,7 +2,26 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledProgrammeU = styled.div`
+        color: white;
 
+        #buttonsupprimer{
+            margin: auto;
+            text-align: center;
+            width: 50%;
+            color: black;
+            background-color: white;
+            border: solid black 1px;
+            border-radius: 10px;
+            transition: 0.2s;
+
+            :hover{
+                background-color: red;
+                cursor: pointer;
+                color: white;
+                transform: scale(1.1);
+            }
+
+        }
     `
 
 const ProgrammeU = (props) => {
@@ -29,6 +48,7 @@ const ProgrammeU = (props) => {
     return (
         <React.Fragment>
             <StyledProgrammeU>
+                <div className='button' id="buttonsupprimer" onClick={() => {props.onDelete(props.id)}}>Supprimer</div>
                 {afficherProgramme()}
             </StyledProgrammeU>
         </React.Fragment>

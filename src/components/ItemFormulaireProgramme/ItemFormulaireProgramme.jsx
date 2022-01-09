@@ -18,7 +18,7 @@ const ItemFormulaireProgramme = (props) => {
         setIsChoiced(true)
         let value = e.target.value
         if (value == "pompes" || value == "dips" || value == "squats"){
-            setTypeExercice("0 repetition")
+            setTypeExercice("0 répétition")
         }
         else {
             setTypeExercice("0 seconde")

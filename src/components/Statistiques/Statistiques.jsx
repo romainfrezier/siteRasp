@@ -8,8 +8,19 @@ import StatsU from '../StatsU/StatsU';
 
 
 const StyledStatistiques = styled.div`
-    width: 100%;
-    height: 100%
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 15% 75% 10%;
+        background-color: gray;
+
+        #listeStats{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            overflow-y: scroll;
+        }
     `
 
 const Statistiques = () => {
@@ -29,11 +40,11 @@ const Statistiques = () => {
     const afficherStats = () => {
         return (
             Object.keys(statistiquesData).map((key) => (
-                <StatsU
-                    nom={statistiquesData[key].nom}
-                    nombre={statistiquesData[key].nombre}
-                    unite={statistiquesData[key].unite}
-                />
+                    <StatsU
+                        nom={statistiquesData[key].nom}
+                        nombre={statistiquesData[key].nombre}
+                        unite={statistiquesData[key].unite}
+                    />
             ))
         );
     }
@@ -42,11 +53,13 @@ const Statistiques = () => {
     return (
         (isMount ? (
         <React.Fragment>
-                <Navbar></Navbar>
                 <StyledStatistiques>
-                    {afficherStats()}
+                    <Navbar></Navbar>
+                    <div id="listeStats">
+                        {afficherStats()}
+                    </div>
+                    <Footer></Footer>
                 </StyledStatistiques>
-                <Footer></Footer>
         </React.Fragment>
         ) : null)
     );
