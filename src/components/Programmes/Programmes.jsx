@@ -23,7 +23,7 @@ const StyledProgrammes = styled.div`
         .programmes{
             margin: 2% 2%;
             padding: 3px;
-            background-color: green;
+            background-color: rgb(191,235,97);
             border: solid black 1px;
             border-radius: 3%;
             transition: 0.2s;

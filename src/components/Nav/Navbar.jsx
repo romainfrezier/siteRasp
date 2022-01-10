@@ -8,7 +8,7 @@ const Nav = styled.nav`
     height: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: skyblue;
+    background-color: rgb(191,235,97);
 
     .logo{
         padding: 20px 20px;
@@ -21,7 +21,6 @@ const Navbar = () => {
     return (
         <Nav>
             <div className="logo">
-                NavBar
             </div>
             <Burger/>
         </Nav>

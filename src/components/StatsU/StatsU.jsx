@@ -7,7 +7,6 @@ const StyledStatsU = styled.div`
         margin: 2% 1%;
         padding: 5% 20%;
         border: solid black 2px;
-        border-radius: 10%;
         font-size: 2rem;
         text-align: center;
     `

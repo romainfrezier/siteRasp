@@ -24,13 +24,14 @@ const StyledFormulaireProgramme = styled.div`
         #boutonAjoutExo{
             border: solid black 2px;
             border-radius: 10px;
-            background-color: green;
+            background-color: rgb(191,235,97);
             height: 30px;
             transition: 0.2s;
 
             :hover{
-                color: white;
+                color: red;
                 transform: scale(1.1);
+                cursor: pointer;
             }
         }
 

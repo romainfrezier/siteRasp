@@ -43,7 +43,7 @@ const creerProgramme = (programme) => {
 
 const supprimerProgramme = (id) => {
     return new Promise((resolve, reject) => {
-        var programmeDelete = firebase.database().ref("Database/Programmes/" + id);
+        var programmeDelete = firebase.database().ref("Programmes/" + id);
         programmeDelete.remove().then(() => {
             resolve(true);
         });
